@@ -9,7 +9,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Data model: These strings will be the data for the table view cells
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt"]
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
@@ -37,7 +37,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
+        //self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
         
         // set the text from the data model
         cell.textLabel?.text = self.animals[indexPath.row]
