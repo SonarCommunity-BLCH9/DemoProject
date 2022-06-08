@@ -9,7 +9,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Data model: These strings will be the data for the table view cells
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt"]
+    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt","Goat","Goatttttt","Horse", "Cow", "Camel", "Sheep", "Goat","Goatttttt"]
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
