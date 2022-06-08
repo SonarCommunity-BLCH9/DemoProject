@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         
-        
+        tableView.delegate = self
         
         // Register the table view cell class and its reuse id
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // self.tableView.tableFooterView = UIView()
 
         // This view controller itself will provide the delegate methods and row data for the table view.
-        tableView.delegate = self
+        
         
         tableView.dataSource = self
     }
