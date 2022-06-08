@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
         // This view controller itself will provide the delegate methods and row data for the table view.
         tableView.delegate = self
+        
         tableView.dataSource = self
     }
     
