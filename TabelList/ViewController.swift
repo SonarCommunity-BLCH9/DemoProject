@@ -22,17 +22,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         tableView.delegate = self
-        
+        tableView.dataSource = self
         // Register the table view cell class and its reuse id
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
-        // (optional) include this line if you want to remove the extra empty cell divider lines
-        // self.tableView.tableFooterView = UIView()
-
-        // This view controller itself will provide the delegate methods and row data for the table view.
-        
-        
-        tableView.dataSource = self
     }
     
     // number of rows in table view
